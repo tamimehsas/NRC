@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description"
+    content=" In 1895 the Norwegian Red Cross began educating nurses, and in 1907 the Norwegian Ministry of Defence authorized the organization for voluntary medical aid in war." />
+
+  <!-- Always include this line of code!!! -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" href="img/favicon.png" />
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/queries.css" />
+
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+
+  <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+  <script defer src="js/script.js"></script>
+  
+  <style>
+      #container-map,#container-map2 {
+          height: 500px;
+          min-width: 600px;
+          max-width: 800px;
+          margin: 0 auto;
+      }
+
+      .loading {
+          margin-top: 10em;
+          text-align: center;
+          color: gray;
+      }
+  </style>
+
+  <title>Norwegian &mdash; Red Cross</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1>Logo</h1>
+
+    <!-- <a href="#">
+        <img class="logo" alt="NRC logo" src="img/logo.jfif" />
+      </a> -->
+
+    <nav class="main-nav">
+      <ul class="main-nav-list">
+        <li><a class="main-nav-link" href="#how">Covered areas</a></li>
+        <!-- <li><a class="main-nav-link" href="#meals">SCH</a></li>
+        <li>
+          <a class="main-nav-link" href="#testimonials">BHC</a> -->
+        </li>
+        <li><a class="main-nav-link nav-cta" href="#cta">Get in touch</a></li>
+      </ul>
+    </nav>
+
+    <button class="btn-mobile-nav">
+      <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+      <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+    </button>
+  </header>
+
+  <main>
+    <section class="section-hero">
+      <div class="hero">
+        <div class="hero-text-box">
+          <h1 class="heading-primary" style="text-transform: uppercase;text-align:left;letter-spacing: 3px;">
+            With humanity, towards peace
+          </h1>
+          <p class="hero-description">
+            In 1895 the Norwegian Red Cross began educating nurses, and in 1907 the Norwegian Ministry of Defence
+            authorized the organization for voluntary medical aid in war
+          </p>
+          <a href="#cta" class="btn btn--full margin-right-sm">Get in touch</a>
+
+          <a href="#how" class="btn btn--outline">Learn more &darr;</a>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section-how" id="how">
+      <div class="container">
+        <span class="subheading">Covered Areas</span>
+        <h2 class="heading-secondary">
+          Areas covered by NRC all over Afghanistan
+        </h2>
+      </div>
+
+      <div class="container grid grid--2-cols grid--center-v">
+        <!-- STEP 01 -->
+        <div class="step-text-box">
+          <p class="step-number">01</p>
+          <h3 class="heading-tertiary">
+            BHC (Basic health center) Inforgraphic map of 30 provinces
+          </h3>
+          <p class="step-description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet molestiae ullam nisi, id incidunt nihil harum
+            ipsam cum, laborum voluptates neque excepturi doloribus porro quam vero quae voluptate dolorem repellat.
+          </p>
+        </div>
+
+        <!-- <div class="step-img-box"> -->
+          <!-- <img src="img/app/app-screen-1.png" class="step-img" alt="iPhone app
+            preferences selection screen" /> -->
+        <!-- </div> -->
+        <div id="container-map"></div>
+
+        <!-- STEP 02 -->
+        <!-- <div class="step-img-box">
+          <img src="img/app/app-screen-2.png" class="step-img" alt="iPhone app
+            meal approving plan screen" />
+        </div> -->
+        <div id="container-map2"></div>
+
+        <div class="step-text-box">
+          <p class="step-number">02</p>
+          <h3 class="heading-tertiary">SHC (Sub health center) - Covered districts, 6 provinces </h3>
+          <p class="step-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, iste. Necessitatibus illum quia
+            explicabo, voluptatibus dolorem temporibus, cum iure dolores fugiat ex porro tempore quae ea nam repudiandae
+            qui accusamus.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section-cta" id="cta">
+      <div class="container">
+        <div class="cta">
+          <div class="cta-text-box">
+            <h2 class="heading-secondary">Get in touch with us!</h2>
+            <p class="cta-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis quis et odit deleniti excepturi
+              accusantium aliquam.
+            </p>
+
+            <form class="cta-form" name="sign-up" netlify>
+              <div>
+                <label for="full-name">Full Name</label>
+                <input id="full-name" type="text" placeholder="John Smith" name="full-name" required />
+              </div>
+
+              <div>
+                <label for="email">Email address</label>
+                <input id="email" type="email" placeholder="me@example.com" name="email" required />
+              </div>
+
+              <div>
+                <label for="select-where">Where did you hear from us?</label>
+                <select id="select-where" name="select-where" required>
+                  <option value="">Please choose one option:</option>
+                  <option value="friends">Friends and family</option>
+                  <option value="youtube">YouTube video</option>
+                  <option value="ad">Facebook ad</option>
+                  <option value="others">Others</option>
+                </select>
+              </div>
+
+              <button class="btn btn--form">Leave a message</button>
+
+              <!-- <input type="checkbox" />
+                <input type="number" /> -->
+            </form>
+          </div>
+          <div class="cta-img-box" role="img" aria-label="Woman enjoying food"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container grid grid--footer">
+      <div class="logo-col">
+        <a href="#" class="footer-logo">
+          <!-- <img class="logo" alt="Omnifood logo" src="img/logo.jfif" height="800px" width="100px"> -->
+          <h1>NRC LOGO</h1>
+        </a>
+
+        <ul class="social-links">
+          <li>
+            <a class="footer-link" href="#">
+              <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">
+              <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">
+              <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+        <p class="copyright">
+          Copyright &copy; <span class="year">2021</span> by NRC, Inc.
+          All rights reserved.
+        </p>
+      </div>
+
+      <div class="address-col">
+        <p class="footer-heading">Contact us</p>
+        <address class="contacts">
+          <p class="address">
+            623 Harrison St., 2nd Floor, San Francisco, CA 94107
+          </p>
+          <p>
+            <a class="footer-link" href="tel:415-201-6370">415-201-6370</a><br />
+            <a class="footer-link" href="mailto:hello@omnifood.com">hello@omnifood.com</a>
+          </p>
+        </address>
+      </div>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Account</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="#">Create account</a></li>
+          <li><a class="footer-link" href="#">Sign in</a></li>
+
+        </ul>
+      </nav>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Company</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="#">About NRC</a></li>
+          <li><a class="footer-link" href="#">Careers</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Resources</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="#">Help center</a></li>
+          <li><a class="footer-link" href="#">Privacy & terms</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/mapdata/countries/af/af-all.js"></script>
+  <script>
+    // Prepare demo data
+// Data is joined to map using value of 'hc-key' property by default.
+// See API docs for 'joinBy' for more info on linking data and map.
+var data = [
+['af-kt', 0],
+['af-pk', 1],
+['af-gz', 2],
+['af-bd', 3],
+['af-nr', 4],
+['af-kr', 5],
+['af-kz', 6],
+['af-ng', 7],
+['af-tk', 8],
+['af-bl', 9],
+['af-kb', 10],
+['af-kp', 11],
+['af-2030', 12],
+['af-la', 13],
+['af-lw', 14],
+['af-pv', 15],
+['af-sm', 16],
+['af-vr', 17],
+['af-pt', 18],
+['af-bg', 19],
+['af-hr', 20],
+['af-bk', 21],
+['af-jw', 22],
+['af-bm', 23],
+['af-gr', 24],
+['af-fb', 25],
+['af-sp', 26],
+['af-fh', 27],
+['af-hm', 28],
+['af-nm', 29],
+['af-2014', 30],
+['af-oz', 31],
+['af-kd', 32],
+['af-zb', 33]
+];
+
+// Create the chart
+Highcharts.mapChart('container-map', {
+chart: {
+    map: 'countries/af/af-all'
+},
+
+title: {
+    text: 'BHC Covered areas 👇'
+},
+
+// subtitle: {
+//     text: 'Source map: <a href="http://code.highcharts.com/mapdata/countries/af/af-all.js">Afghanistan</a>'
+// },
+
+mapNavigation: {
+    enabled: true,
+    buttonOptions: {
+        verticalAlign: 'bottom'
+    }
+},
+
+colorAxis: {
+    min: 0
+},
+
+series: [{
+    data: data,
+    name: '',
+    states: {
+        hover: {
+            // color: '#BADA55'
+              color: '#e67e22'
+        }
+    },
+    dataLabels: {
+        enabled: true,
+        format: '{point.name}'
+    }
+}]
+});
+
+var data = [
+['af-kt', 0],
+['af-pk', 1],
+['af-gz', 2],
+['af-bd', 3],
+['af-nr', 4],
+['af-kr', 5],
+['af-kz', 6],
+['af-ng', 7],
+['af-tk', 8],
+['af-bl', 9],
+['af-kb', 10],
+['af-kp', 11],
+['af-2030', 12],
+['af-la', 13],
+['af-lw', 14],
+['af-pv', 15],
+['af-sm', 16],
+['af-vr', 17],
+['af-pt', 18],
+['af-bg', 19],
+['af-hr', 20],
+['af-bk', 21],
+['af-jw', 22],
+['af-bm', 23],
+['af-gr', 24],
+['af-fb', 25],
+['af-sp', 26],
+['af-fh', 27],
+['af-hm', 28],
+['af-nm', 29],
+['af-2014', 30],
+['af-oz', 31],
+['af-kd', 32],
+['af-zb', 33]
+];
+
+// Create the chart
+Highcharts.mapChart('container-map2', {
+chart: {
+    map: 'countries/af/af-all'
+},
+
+title: {
+    text: 'SHC Covered areas 👇'
+},
+
+// subtitle: {
+//     text: 'Source map: <a href="http://code.highcharts.com/mapdata/countries/af/af-all.js">Afghanistan</a>'
+// },
+
+mapNavigation: {
+    enabled: true,
+    buttonOptions: {
+        verticalAlign: 'bottom'
+    }
+},
+
+colorAxis: {
+    min: 0
+},
+
+series: [{
+    data: data,
+    name: 'Random data',
+    states: {
+        hover: {
+            // color: '#BADA55'
+              color: '#e67e22'
+        }
+    },
+    dataLabels: {
+        enabled: true,
+        format: '{point.name}'
+    }
+}]
+});
+</script>
+</body>
+
+</html>
